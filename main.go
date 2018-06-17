@@ -1,10 +1,10 @@
 package main
 
 import (
-	"io/ioutil"
-	"strings"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"io/ioutil"
+	"strings"
 )
 
 // Handler is executed by AWS Lambda in the main function. Once the request
@@ -14,7 +14,7 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	if err != nil {
 		return events.APIGatewayProxyResponse{}, err
 	}
-	body:=strings.Replace( string(index), "You just", "Tim just",-1))
+	body := strings.Replace(string(index), "You just", "Tim just", -1)
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
 		Body:       body,
