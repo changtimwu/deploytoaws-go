@@ -1,3 +1,4 @@
+![Build Status](https://codebuild.us-east-1.amazon.com/badges?uuid=406995953077&branch=master)
 Welcome to the AWS CodeStar sample web application
 ==================================================
 
